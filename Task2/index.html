@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Testing Tool</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>API Testing Tool</h1>
+        <div class="api-info">
+            <h2>Testing API: https://fakestoreapi.com/products</h2>
+            <button id="runTests" onclick="runTests()">Run Tests</button>
+        </div>
+
+        <div class="test-results">
+            <div class="test-section">
+                <h3>Server Response</h3>
+                <div id="serverResponse" class="result-box">
+                    <p>Status: <span id="statusCode">-</span></p>
+                    <p>Status Text: <span id="statusText">-</span></p>
+                </div>
+            </div>
+
+            <div class="test-section">
+                <h3>Data Validation Results</h3>
+                <div id="validationResults" class="result-box">
+                    <div class="validation-summary">
+                        <p>Total Products: <span id="totalProducts">-</span></p>
+                        <p>Products with Issues: <span id="productsWithIssues">-</span></p>
+                    </div>
+                    <div class="issues-list">
+                        <h4>Products with Issues:</h4>
+                        <div id="issuesList"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
